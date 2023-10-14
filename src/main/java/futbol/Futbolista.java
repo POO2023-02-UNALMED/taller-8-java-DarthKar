@@ -23,7 +23,8 @@ abstract public class Futbolista implements Comparable<Object> {
         return this.nombre.equals(f.nombre) && this.edad == f.edad && this.posicion.equals(f.posicion);
     }
 
-    public String elFutbolista() {
+    @Override
+    public String toString() {
         return "El futbolista " + nombre + " tiene " + edad + ", y juega de " + posicion;
     }
 

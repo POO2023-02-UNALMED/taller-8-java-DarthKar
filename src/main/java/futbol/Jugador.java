@@ -25,7 +25,8 @@ public class Jugador extends Futbolista{
         return Math.abs(this.getEdad() - f2.getEdad());
     }
     
-    public String elJugador(){
+    @Override
+    public String toString(){
         return "El futbolista "+this.getNombre()+" tiene "+this.getEdad()+", y juega de "+this.getPosicion()+" con el dorsal "+dorsal+". Ha marcado"+golesMarcados;
     }
 
